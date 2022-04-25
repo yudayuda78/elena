@@ -1,0 +1,646 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Raleway', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+    display: flex;
+    height: 1200px;
+}
+
+
+/* navbar */
+.container .navbar{
+    background-color: #fff;
+    width: 224px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    position: fixed;
+}
+
+
+
+.container .navbar .img{
+    width: 106px;
+    height: 32px;
+    margin: 44px auto 0;
+}
+
+.container .navbar ul li{
+    width: 158px;
+    height: 45px;
+    margin: 2px auto;
+    
+}
+
+.container .navbar ul li:hover{
+    background-color:#5B58FF;
+    
+}
+
+.container .navbar ul li:hover img{
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(77deg) brightness(105%) contrast(101%);
+}
+
+.container .navbar ul li:hover span{
+    color: #fff;
+}
+
+.container .navbar ul li img{
+    position: relative;
+    left: 12px;
+    top: 3px;
+    width: 23px;
+    height: 23px;
+}
+
+.container .navbar ul li span{
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+.container .navbar ul li:nth-child(1){
+    margin-top: 42px;
+    
+}
+
+.container .navbar ul li:nth-child(1) img{
+    filter: invert(40%) sepia(23%) saturate(552%) hue-rotate(182deg) brightness(91%) contrast(89%);
+}
+
+
+.container .navbar ul li:nth-child(6){
+    margin-top: 222px;
+    
+}
+
+.container .navbar ul a{
+    text-decoration: none;
+}
+
+/* akhir navbar */
+
+
+/* item */
+.container .item{
+    width: 1146px;
+    height: 100%;
+    background-color: #ECF3FB;
+    margin-left: 224px;
+}
+
+.container .item .wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* navbar item */
+.container .item .wrap .searchbox{
+    margin-top: 30px;
+    display: flex;
+    height: 70px;
+    width: 960px;
+    /* background-color: rgb(210, 255, 240); */
+    /* position: fixed; */
+    z-index: 40;
+}
+.container .item .wrap .searchbox .input{
+    display: flex;
+}
+
+.container .item .wrap .searchbox .input input{
+    width: 260px;
+    height: 35px;
+    display: block;
+    border-radius: 20px;
+    margin-top: 14px;
+}
+
+.container .item .wrap .searchbox .input img{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 480px;
+    top: 50px;
+}
+
+.container .item .wrap .searchbox .input img:hover{
+    cursor: pointer;
+}
+
+.container .item .wrap .searchbox .wadahNotif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 582px;
+    margin-right: 15px;
+}
+
+.container .item .wrap .searchbox .wadahNotif .notifikasi{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.container .item .wrap .searchbox .wadahNotif .notifikasi:hover{
+    cursor: pointer;
+}
+
+.container .item .wrap .searchbox .wadahNotif .notifikasi:hover img{
+    cursor: pointer;
+}
+
+
+.container .item .wrap .searchbox .wadahImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .item .wrap .searchbox .wadahImg .orang{
+    width: 60px;
+    height: 60px;
+}
+
+.container .item .wrap .searchbox .wadahImg .orang:hover{
+    cursor: pointer;
+}
+
+
+
+/* item tengah */
+
+.itemTengah{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    margin-top: 20px;
+}
+
+
+.itemTengah .kiri{
+    width: 80%;
+    /* background-color: rgb(184, 255, 231); */
+}
+
+.itemTengah .kanan{
+    width: 30%;
+    /* background-color: aquamarine; */
+}
+
+.itemTengah .kiri .hallo{
+    width: 95%;
+    height: 140px;
+    background-color: #5B58FF;
+    color: #fff;
+    
+}
+
+.itemTengah .kiri .hallo .wraphallo{
+    width: 90%;
+    height: 140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+
+/* .itemTengah .kiri .hallo .wraphallo h3{
+    
+} */
+
+.itemTengah .kiri .hallo .wraphallo h2{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.itemTengah .kiri .hallo .wraphallo p{
+    font-size: 14px;
+}
+
+.itemTengah .kiri .hallo .wraphallo .buku{
+    height: 160px;
+    width: 200px;
+    position: absolute;
+    left: 720px;
+    top: 90px;
+}
+
+.itemTengah .kiri .scroll{
+    width: 95%;
+    height: 140px;
+    /* background-color: #5B58FF; */
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+   
+}
+
+
+
+.itemTengah .kiri .scroll .itemscroll:nth-child(1){
+    height: 140px;
+    flex: 3;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.itemTengah .kiri .scroll .itemscroll:nth-child(2){
+    height: 140px;
+    flex: 1.5;
+    background-color: #fff;
+    
+}
+
+.itemTengah .kiri .scroll .itemscroll .itemscrollwrap{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin: auto;
+}
+
+.itemTengah .kiri .scroll .itemscroll .itemscrollwrap img{
+    width: 100%;
+    height: 80px;
+}
+
+.itemTengah .kiri .scroll .itemscroll:nth-child(2) img{
+    width: 60%;
+    height: 80px;
+    margin: auto;
+}
+
+.itemTengah .kiri .scroll .itemscroll .itemscrollwrap h5{
+    line-height: 40px;
+}
+
+.itemTengah .kiri .scroll .itemscroll .itemscrollwrap h5 span{
+    font-weight: bold;
+}
+
+.itemTengah .kiri .scroll .itemscroll:nth-child(2) .itemscrollwrap h5{
+    text-align: center;
+}
+
+.itemTengah .kiri h3{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.itemTengah .kiri h3 span{
+    font-weight: bolder;
+}
+
+.itemTengah .kiri .forum{
+    width: 95%;
+    height: 400px;
+    /* background-color: rgb(234, 212, 255); */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.itemTengah .kiri .forum .forumItem{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.itemTengah .kiri .forum .forumItem .wrapforum{
+    width: 90%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+
+.itemTengah .kiri .forum .forumItem .wrapforum p{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.itemTengah .kiri .forum .forumItem .wrapforum p span{
+    font-weight: bold;
+}
+
+.itemTengah .kiri .forum .forumItem .wrapforum h5{
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.itemTengah .kiri .forum .forumItem .wrapforum .kataforum{
+    height: 90px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemTengah .kiri .forum .forumItem .wrapforum .gambarforum{
+    width: 30%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.itemTengah .kiri .forum .forumItem .wrapforum .gambarforum img{
+    height: 40px;
+    width: 90px;   
+}
+
+
+.kanan .kalender{
+    width: 100%;
+    height: 220px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanan .kalender img{
+    width: 80%;
+    height: 80%;
+}
+
+
+.kanan .classes{
+    width: 100%;
+    height: 475px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.kanan .classes .wrapclasses{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.kanan .classes .wrapclasses .tulisanh4{
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.kanan .classes .wrapclasses ul li{
+    width: 220px;
+    /* width: 100%; */
+    height: 60px;
+    background-color: #F4F4FE;
+    margin-top: 10px;
+}
+
+.kanan .classes .wrapclasses ul li:hover{
+    background-color: #5B58FF;
+}
+
+.kanan .classes .wrapclasses ul li a .itemclass{
+    display: flex;
+
+}
+
+.kanan .classes .wrapclasses ul li .itemclass .tulisan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kanan .classes .wrapclasses ul li a{
+    color : #0E1F4E;
+    /* font-size: 14px; */
+    text-decoration: none;
+}
+
+
+.kanan .classes .wrapclasses ul li a .itemclass .tulisan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+}
+
+
+.kanan .classes .wrapclasses ul li a .itemclass .panah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* width: 100%; */
+    margin-right: 10px;
+}
+.kanan .classes .wrapclasses ul li a .itemclass .tulisan h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.kanan .classes .wrapclasses ul li a .itemclass .tulisan p{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.kanan .classes .wrapclasses ul li:hover a .itemclass .tulisan h4{
+    color: #fff;
+}
+
+.kanan .classes .wrapclasses ul li:hover a .itemclass .tulisan p{
+    color: #fff;
+}
+
+.kanan .classes .wrapclasses ul li:hover a .itemclass .panah img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+}
+
+.kanan .assignment{
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.kanan .assignment .wrapassingment{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.kanan .assignment .wrapassingment h3{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.kanan .assignment .wrapassingment .noasin{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.notifmodal{
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    right: 110px;
+    top: 60px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.notifmodal.muncul{
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    right: 110px;
+    top: 110px;
+    opacity: 1;
+}
+
+
+.notifmodal .notifmodalwrap{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.usermodal{
+    width: 220px;
+    height: 80px;
+    position: absolute;
+    background-color: #fff;
+    right: 40px;
+    top: 60px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.usermodal.muncul{
+    width: 220px;
+    height: 80px;
+    position: absolute;
+    background-color: #fff;
+    right: 40px;
+    top: 110px;
+    opacity: 1;
+}
+
+.usermodal .nusermodalwrap{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usermodal .nusermodalwrap ul{
+    width: 100%;
+}
+
+.usermodal .nusermodalwrap li{
+    background-color: #fff;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usermodal .nusermodalwrap li:hover{
+    background-color: #5B58FF;
+}
+
+.usermodal .nusermodalwrap li:hover a{
+    color: #fff;
+}
+
+.usermodal .nusermodalwrap li:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.usermodal .nusermodalwrap li a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #0E1F4E;
+}
